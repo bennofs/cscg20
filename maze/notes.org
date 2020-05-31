@@ -1,0 +1,46 @@
+#+TITLE: notes
+
+tower at about 286 4565
+lava at 4444 4444
+
+teleports (discovered)
+2699 2572
+2964 2319
+2751 2206
+2373 2375
+
+
+* funcs
+0x3C5091  debuglog
+0x3C5020  sendemoji
+0x415CB0  CharacterActor setGravityMode
+0x3D73D0  UnityInputHandler getButtonDown
+
+* flags
+CSCG{Your_hack_got_reported_to_authorities!}
+CSCG{RADAR_HACK_XYZ}
+CSCG{SOLVED_THE_MAZE...LONG_WAY_BACK!}
+CSCG{SPEEDH4X_MAZE_RUNNER_BUNNYYYY}
+CSCG{FLYHAX_TOO_CLOSE_TO_THE_SUN!}
+CSCG{N3VER_TRUST_T1111ME}
+* server
+- time may never go backward (makes sense due to reordering)
+- server ignores packets with time <= lastHeartbeatTime
+- time updated both for state & heartbeat packets
+- server sends game state after heartbeat
+- however, sending a states update is necessary to prevent forced logout (after ~40s)
+* opcodes
+0x20 op_text_
+0x3c 0x33 heartbeat <usersecret> <time>
+0x43 got flag
+0x44 death
+0x45 sendemoji
+0x46 fake_death (disable pos update)
+0x49 info packet / info request
+0x4c connect success / request login
+0x50 position update
+0x52 got race
+0x54 teleport player
+0x55 teleporter unlocked
+0x58 exit?
+0x59 logged in

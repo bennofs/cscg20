@@ -1,0 +1,16 @@
+#+TITLE: notes
+
+* look at spectogram
+** The password is: Th3-R3D-P1ll? -> steghide
+** 60 repeats
+* about the chunks
+** most (51) seem to have size 294013
+** 9? chunks with size 247047
+* use password for steghide
+* image
+[[file:data.jpg][diff]]
+
+data:
+0110111000100001010000110011001101011111010100000101011100111111
+# n!C3_PW?
+* base85 decode 6W6?BHW,#BB/FK[?VN@u2e>m8 -> CSCG{St3g4n0_M4s7eR}

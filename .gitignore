@@ -1,1 +1,8 @@
 out/
+*_Data
+*.pyc
+env/
+__pycache__
+MonoBleedingEdge
+.clangd
+maze-files

@@ -1,0 +1,22 @@
+#+TITLE: notes
+
+* flags
+
+fake CSCG{f0r3n51c_1ntr0_c0py_4nd_p45t3_buff3r_1n_xp}
+
+1EFC99B6046A0F2C7E8C7EF9DC416323 dl0
+C129BD7796F23B97DF994576448CAA23 l00hcs
+017EFBC5B1D3FB2D4BE8A431FA6D6258 1hp13d
+25DB3350B38953836C36DFB359DB4E27 kc4rc
+40A00CA65772D7D102BB03C3A83B1F91 !3m
+
+CSCG{0ld_sch00l_d31ph1_cr4ck_m3!}
+CSCG{c4ch3d_p455w0rd_fr0m_0p3n_tru3_cryp1_c0nt41n3r5}
+
+* find profile
+vol.py imageinfo -f memory.dmp
+Suggested Profile(s) : WinXPSP2x86, WinXPSP3x86 (Instantiated with WinXPSP2x86)
+
+$  v pslist
+0x8173ec08 CSCG_Delphi.exe        1920   1524      1       29      0      0 2020-03-22 18:27:45 UTC+0000
+0x816d8438 TrueCrypt.exe           200   1524      1       44      0      0 2020-03-22 18:28:02 UTC+0000

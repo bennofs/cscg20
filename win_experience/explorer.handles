@@ -1,0 +1,355 @@
+Offset(V)     Pid     Handle     Access Type             Details
+---------- ------ ---------- ---------- ---------------- -------
+0xe1006e60   1524        0x4    0xf0003 KeyedEvent       CritSecOutOfMemoryEvent
+0xe13594e8   1524        0x8        0x3 Directory        KnownDlls
+0x81a07358   1524        0xc   0x100020 File             \Device\HarddiskVolume1\Documents and Settings\CSCG
+0xe135c718   1524       0x10    0xf001f Section          
+0xe135bda8   1524       0x14    0xf000f Directory        Windows
+0xe16e40e0   1524       0x18  0x21f0001 Port             
+0xe16f46d0   1524       0x1c  0x20f003f Key              MACHINE
+0x817adab0   1524       0x20  0x21f0003 Event            
+0xe146da78   1524       0x24    0x2000f Directory        BaseNamedObjects
+0x81ae8ba8   1524       0x28    0xf037f WindowStation    WinSta0
+0x81af21b8   1524       0x2c    0xf01ff Desktop          Default
+0x81ae8ba8   1524       0x30    0xf037f WindowStation    WinSta0
+0x81a6ce78   1524       0x34   0x1f0003 Semaphore        shell.{A48F1A32-A340-11D1-BC6B-00A0C90312E1}
+0x81a32420   1524       0x38   0x100000 Event            crypt32LogoffEvent
+0x817ae1d8   1524       0x3c   0x100020 File             \Device\HarddiskVolume1\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.2180_x-ww_a84f1ff9
+0x817ae0e0   1524       0x40   0x100001 File             \Device\KsecDD
+0x817ad420   1524       0x44   0x100020 File             \Device\HarddiskVolume1\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.2180_x-ww_a84f1ff9
+0x817ae5e0   1524       0x48   0x1f0001 Mutant           
+0x817ad230   1524       0x4c   0x1f0003 Event            
+0x817ad0b0   1524       0x50   0x1f0001 Mutant           
+0x817ad080   1524       0x54   0x1f0003 Event            
+0x817ac020   1524       0x58   0x1f0003 Event            
+0xe1940820   1524       0x5c  0x20f003f Key              USER
+0x817ad1a0   1524       0x60   0x100020 File             \Device\HarddiskVolume1\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.2180_x-ww_a84f1ff9
+0xe16f6580   1524       0x64    0x2001f Key              USER\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\INTERNET SETTINGS
+0x817acff0   1524       0x68   0x1f0003 Event            
+0x817acf60   1524       0x6c   0x100020 File             \Device\HarddiskVolume1\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.2180_x-ww_a84f1ff9
+0x817ace40   1524       0x70   0x100020 File             \Device\HarddiskVolume1\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.2180_x-ww_a84f1ff9
+0xe1940670   1524       0x74  0x20f003f Key              USER
+0x817ace08   1524       0x78   0x1f0003 Event            
+0x817accb0   1524       0x7c   0x100003 Semaphore        
+0x817acc78   1524       0x80   0x100003 Semaphore        
+0xe1981020   1524       0x84    0x20019 Key              MACHINE\MICROSOFT\WINDOWS NT\CURRENTVERSION\DRIVERS32
+0x817acc08   1524       0x88   0x1f0003 Event            
+0x817acbd8   1524       0x8c   0x1f0003 Event            
+0xe1981a68   1524       0x90    0x20019 Key              MACHINE\MICROSOFT\WINDOWS NT\CURRENTVERSION\NETWORK\WORLD FULL ACCESS SHARED PARAMETERS
+0x81ad0558   1524       0x94   0x1f0003 Event            userenv:  User Profile setup event
+0xe16f6240   1524       0x98   0x1f0001 Port             
+0x817acd78   1524       0x9c   0x100020 File             \Device\HarddiskVolume1\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.2180_x-ww_a84f1ff9
+0xe1434f80   1524       0xa0        0x4 Section          
+0xe1980fb8   1524       0xa4    0xf003f Key              USER\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\EXPLORER
+0x817ab5c0   1524       0xa8   0x1f0001 Mutant           ExplorerIsShellMutex
+0x817c0b98   1524       0xac   0x1f0003 Semaphore        shell.{210A4BA0-3AEA-1069-A2D9-08002B30309D}
+0xe19819b0   1524       0xb0    0xf003f Key              MACHINE\MICROSOFT\WINDOWS\CURRENTVERSION\EXPLORER
+0xe1aeeb40   1524       0xb4    0xf003f Key              USER\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\EXPLORER
+0xe1981270   1524       0xb8    0xf003f Key              MACHINE\CLASSES
+0x819d2c38   1524       0xbc   0x120001 Mutant           ShimCacheMutex
+0xe16a3e50   1524       0xc0        0x2 Section          ShimSharedMemory
+0xe1980690   1524       0xc4    0xf003f Key              USER
+0x817a8ed0   1524       0xc8   0x1f0003 Event            
+0xe1ae86c0   1524       0xcc    0xf003f Key              MACHINE\MICROSOFT\COM3
+0x817a8e68   1524       0xd0   0x1f0003 Event            
+0xe1aee020   1524       0xd4       0x10 Key              USER
+0x817a8e00   1524       0xd8   0x1f0003 Event            
+0xe1aeefb8   1524       0xdc    0xf003f Key              MACHINE\CLASSES
+0x817a8d98   1524       0xe0   0x1f0003 Event            
+0xe1aeef50   1524       0xe4       0x10 Key              USER
+0x817a8d30   1524       0xe8   0x1f0003 Event            
+0xe1aeeee8   1524       0xec    0xf003f Key              MACHINE\MICROSOFT\COM3
+0x817a8cc8   1524       0xf0   0x1f0003 Event            
+0xe1aeee80   1524       0xf4    0xf003f Key              MACHINE\MICROSOFT\COM3
+0x817a8c60   1524       0xf8   0x1f0003 Event            
+0xe1aeee18   1524       0xfc    0xf003f Key              MACHINE\CLASSES\CLSID
+0x817a8be0   1524      0x100   0x1f0003 Event            
+0xe1aeedb0   1524      0x104    0xf003f Key              MACHINE\CLASSES
+0x817a8b60   1524      0x108   0x1f0003 Event            
+0xe1aeed48   1524      0x10c    0xf003f Key              MACHINE\MICROSOFT\COM3
+0x817a8ae0   1524      0x110   0x1f0003 Event            
+0xe1aeece0   1524      0x114       0x10 Key              USER
+0x817a8a60   1524      0x118   0x1f0003 Event            
+0xe1aeec78   1524      0x11c    0xf003f Key              MACHINE\MICROSOFT\COM3
+0x817a89e0   1524      0x120   0x1f0003 Event            
+0xe1aeec10   1524      0x124    0xf003f Key              MACHINE\MICROSOFT\COM3
+0x817a8960   1524      0x128   0x1f0003 Event            
+0xe1aeeba8   1524      0x12c    0xf003f Key              MACHINE\CLASSES\CLSID
+0x817a88e0   1524      0x130   0x1f0003 Event            
+0xe19791d0   1524      0x134        0x4 Section          __R_000000000007_SMem__
+0x817a8678   1524      0x138   0x1f0003 Semaphore        shell.{090851A5-EB96-11D2-8BE4-00C04FA31A66}
+0xe1ac2668   1524      0x13c    0x20019 Key              USER
+0x817a8fa0   1524      0x140   0x1f0001 Mutant           
+0x81a9cec0   1524      0x144   0x100020 File             \Device\HarddiskVolume1\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.2180_x-ww_a84f1ff9
+0x817a8a10   1524      0x148   0x100003 Semaphore        
+0xe1981098   1524      0x14c    0x20019 Key              USER
+0x81a6ce78   1524      0x150   0x1f0003 Semaphore        shell.{A48F1A32-A340-11D1-BC6B-00A0C90312E1}
+0x817a8cf8   1524      0x154   0x100003 Semaphore        
+0xe1aee7a8   1524      0x158    0x2001f Key              USER\SOFTWARE\MICROSOFT\PLUS!\THEMES\APPLY
+0x817a8490   1524      0x15c   0x100020 File             \Device\HarddiskVolume1\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.2180_x-ww_a84f1ff9
+0x817a87d0   1524      0x160   0x1f0003 Event            
+0xe1aedcf8   1524      0x164    0x20019 Key              USER
+0xe1980708   1524      0x168   0x1f0001 Port             
+0x817a8400   1524      0x16c   0x1f0003 Event            
+0xe1ad1698   1524      0x170    0x20019 Key              USER
+0x817a8140   1524      0x174   0x1f0003 Event            
+0x817a5898   1524      0x178   0x1f0003 Event            
+0x817b2020   1524      0x17c   0x1f03ff Thread           TID 1528 PID 1524
+0xe1aee2b0   1524      0x180   0x1f0001 Port             
+0x817a5750   1524      0x184   0x1f0003 Event            
+0x817a5f98   1524      0x188   0x1f0003 IoCompletion     
+0xe14a7e70   1524      0x18c   0x1f0001 Port             OLE47DD0276BD764CD1ACD00E2C9C84
+0x817a4020   1524      0x190   0x1f0003 IoCompletion     
+0x817a5f98   1524      0x194   0x1f0003 IoCompletion     
+0x817a4c48   1524      0x198   0x1f03ff Thread           TID 1588 PID 1524
+0x817a4ff0   1524      0x19c   0x1f0003 Event            
+0x817a4fc0   1524      0x1a0   0x1f0003 Event            
+0xe1aff230   1524      0x1a4    0x2001b Key              USER\SOFTWARE\MICROSOFT\INTERNET EXPLORER\SECURITY\P3GLOBAL
+0xe1aff298   1524      0x1a8    0x20019 Key              USER
+0x817a4430   1524      0x1ac   0x1f0003 Event            
+0x817a4460   1524      0x1b0   0x1f03ff Thread           TID 1596 PID 1524
+0x817a43c0   1524      0x1b4  0x21f0003 Event            
+0x817a4300   1524      0x1b8   0x1f0003 Event            
+0x81a008b8   1524      0x1bc   0x1f0003 Timer            
+0x817a4298   1524      0x1c0  0x21f0003 Event            
+0xe1aef9a0   1524      0x1c4       0x1b Key              MACHINE\CLASSES\HTTP\SHELL
+0x817a3020   1524      0x1c8   0x1f03ff Thread           TID 1600 PID 1524
+0x817a41f8   1524      0x1cc   0x1f0003 IoCompletion     
+0x817a40e0   1524      0x1d0   0x1f0003 Timer            
+0x817a3b30   1524      0x1d4   0x1f03ff Thread           TID 1608 PID 1524
+0xe14a1040   1524      0x1d8    0xf0007 Section          MSCTF.MarshalInterface.FileMap.MDG.MB.MKBCB
+0xe1aef938   1524      0x1dc    0x20019 Key              USER
+0xe1b22cc8   1524      0x1e0    0xf0007 Section          MSCTF.MarshalInterface.FileMap.MDG.LB.MKBCB
+0x81a083e8   1524      0x1e4   0x1f0003 Semaphore        shell.{7CB834F0-527B-11D2-9D1F-0000F805CA57}
+0x817a80b0   1524      0x1e8   0x100001 File             \Device\HarddiskVolume1\Documents and Settings\CSCG\Desktop
+0x817a4970   1524      0x1ec   0x1f03ff Thread           TID 1592 PID 1524
+0x817b8fb0   1524      0x1f0   0x1f0003 Semaphore        
+0x817a24b0   1524      0x1f4        0x2 Thread           TID 1620 PID 1524
+0x817a2ff0   1524      0x1f8  0x21f0003 Event            
+0x817a2f80   1524      0x1fc   0x1f0003 Event            
+0x817a24b0   1524      0x200   0x1f03ff Thread           TID 1620 PID 1524
+0xe15da108   1524      0x204    0xf0007 Section          MSCTF.MarshalInterface.FileMap.MDG.OB.GGNMC
+0xe1aee4c8   1524      0x208    0x20019 Key              USER
+0x817a32f0   1524      0x218   0x1f0003 Event            
+0x817a2c38   1524      0x21c   0x100001 File             \Device\HarddiskVolume1\Documents and Settings\All Users\Desktop
+0x817a2028   1524      0x220   0x100001 File             \Device\HarddiskVolume1\Documents and Settings\CSCG\Local Settings\Application Data\Microsoft\CD Burning
+0xe1aff870   1524      0x224    0x20019 Key              USER
+0xe1943c20   1524      0x228    0xf0007 Section          CiceroSharedMemDefaultS-1-5-21-343818398-789336058-1343024091-1004
+0x817a2bc8   1524      0x22c   0x1f0001 Mutant           CTF.LBES.MutexDefaultS-1-5-21-343818398-789336058-1343024091-1004
+0x817a1db0   1524      0x230   0x1f0001 Mutant           CTF.Compart.MutexDefaultS-1-5-21-343818398-789336058-1343024091-1004
+0x817a1d60   1524      0x234   0x1f0001 Mutant           CTF.Asm.MutexDefaultS-1-5-21-343818398-789336058-1343024091-1004
+0x817a1d10   1524      0x238   0x1f0001 Mutant           CTF.Layouts.MutexDefaultS-1-5-21-343818398-789336058-1343024091-1004
+0x817a1cc0   1524      0x23c   0x1f0001 Mutant           CTF.TMD.MutexDefaultS-1-5-21-343818398-789336058-1343024091-1004
+0xe1aff808   1524      0x240    0x20019 Key              USER
+0x81ae3dd8   1524      0x244   0x12019f File             \Device\NamedPipe\lsarpc
+0xe1afe2d8   1524      0x248  0x20f003f Key              USER
+0x817a2eb0   1524      0x24c   0x1f0003 Event            
+0xe1afe1c0   1524      0x250    0x20019 Key              USER
+0xe1b05ce0   1524      0x254    0x2001d Key              USER\SOFTWARE\MICROSOFT\INTERNET EXPLORER\SECURITY\P3SITES
+0x81a3af70   1524      0x258   0x1f0003 Event            
+0x81a3af40   1524      0x25c   0x1f0003 Event            
+0xe1b068e0   1524      0x260    0xf003f Key              MACHINE\CLASSES\CLSID
+0x817a46f8   1524      0x264  0x21f0003 Event            
+0xe1b06790   1524      0x268    0xf003f Key              USER\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\EXPLORER\FILEEXTS
+0xe1b06680   1524      0x26c    0xf003f Key              USER\SOFTWARE\MICROSOFT\WINDOWS\SHELL
+0xe1b06430   1524      0x270    0xf003f Key              USER\SOFTWARE\MICROSOFT\WINDOWS\SHELLNOROAM
+0xe1b05900   1524      0x278    0xf003f Key              USER\SOFTWARE\MICROSOFT\WINDOWS\SHELLNOROAM\MUICACHE
+0xe1b3f4e8   1524      0x280    0x20019 Key              USER
+0xe1b455c0   1524      0x284    0x20019 Key              USER
+0x81a1c680   1524      0x288   0x1f0001 Mutant           
+0x81a039e0   1524      0x28c   0x1f0003 Event            
+0x81a039b0   1524      0x290   0x1f0003 Event            
+0x81a1c640   1524      0x294   0x1f0001 Mutant           
+0x81a03980   1524      0x298   0x1f0003 Event            
+0x81a03940   1524      0x29c   0x1f0001 Mutant           
+0x81a34ff0   1524      0x2a0   0x1f0003 Event            
+0xe1b4b580   1524      0x2a4   0x1f0001 Port             
+0x81a34770   1524      0x2a8   0x1f0003 Semaphore        
+0x81756ff0   1524      0x2ac   0x1f0003 Event            
+0xe1b48368   1524      0x2b0    0x20019 Key              USER
+0xe1b47368   1524      0x2b4    0x20019 Key              USER
+0x81a6ce78   1524      0x2b8   0x1f0003 Semaphore        shell.{A48F1A32-A340-11D1-BC6B-00A0C90312E1}
+0xe1b4de78   1524      0x2c0    0x20019 Key              USER
+0xe1b4f310   1524      0x2c4    0x20019 Key              USER
+0xe1b51020   1524      0x2c8    0x20019 Key              USER
+0x81a34f80   1524      0x2cc   0x1f0001 Mutant           _SHuassist.mtx
+0x81a98318   1524      0x2d0   0x100001 File             \Device\HarddiskVolume1\Documents and Settings\All Users\Start Menu
+0x81a96f90   1524      0x2d4   0x100001 File             \Device\HarddiskVolume1\Documents and Settings\CSCG\Start Menu
+0x81a94ea0   1524      0x2dc   0x100020 File             \Device\HarddiskVolume1\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.2180_x-ww_a84f1ff9
+0x81a72110   1524      0x2e0   0x1f0003 Event            
+0xe1b51fb8   1524      0x2e4    0x10003 Key              USER\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\EXPLORER\USERASSIST\{75048700-EF1F-11D0-9888-006097DEACF9}\COUNT
+0xe1b51f50   1524      0x2e8    0x10003 Key              USER\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\EXPLORER\USERASSIST\{5E6AB780-7743-11CF-A12B-00AA004AE837}\COUNT
+0xe1b51b38   1524      0x2ec    0x20019 Key              USER
+0x817a8228   1524      0x2f0   0x1f0001 Mutant           ZonesCounterMutex
+0xe1b51200   1524      0x2f4    0x20019 Key              USER
+0x817a2810   1524      0x2f8   0x1f0001 Mutant           ZonesCacheCounterMutex
+0x817a27c0   1524      0x2fc   0x1f0001 Mutant           ZonesLockedCacheCounterMutex
+0x81a4e558   1524      0x300   0x1f0003 Event            
+0x81a96570   1524      0x304   0x100020 File             \Device\HarddiskVolume1\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.2180_x-ww_a84f1ff9
+0x81a03aa0   1524      0x308   0x100020 File             \Device\HarddiskVolume1\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.2180_x-ww_a84f1ff9
+0xe1b56e60   1524      0x30c    0xf0007 Section          UrlZonesSM_CSCG
+0x81a20628   1524      0x310   0x120116 File             \Device\Tcp
+0x81a94ad8   1524      0x314   0x1200a0 File             \Device\Tcp
+0xe19538e0   1524      0x318    0x20019 Key              USER
+0x817a3da8   1524      0x31c   0x1f03ff Thread           TID 1604 PID 1524
+0x8195e450   1524      0x328   0x1200a0 File             \Device\Ip
+0x8195e028   1524      0x32c   0x100003 File             \Device\Ip
+0x81a03d18   1524      0x330   0x1200a0 File             \Device\Ip
+0x817cd440   1524      0x334   0x100003 Semaphore        
+0x817acb10   1524      0x338   0x100003 Semaphore        
+0xe1b18ea8   1524      0x33c    0x20019 Key              MACHINE\CONTROLSET001\SERVICES\TCPIP\LINKAGE
+0xe1b18e40   1524      0x340    0x20019 Key              MACHINE\CONTROLSET001\SERVICES\TCPIP\PARAMETERS
+0xe16a1c10   1524      0x344    0x20019 Key              MACHINE\CONTROLSET001\SERVICES\NETBT\PARAMETERS\INTERFACES
+0xe1b18ca8   1524      0x348    0x20019 Key              MACHINE\CONTROLSET001\SERVICES\NETBT\PARAMETERS
+0x817a5a90   1524      0x34c   0x1f0001 Mutant           CTF.TimListCache.FMPDefaultS-1-5-21-343818398-789336058-1343024091-1004MUTEX.DefaultS-1-5-21-343818398-789336058-1343024091-1004
+0x81a03c80   1524      0x350   0x100020 File             \Device\HarddiskVolume1\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.2180_x-ww_a84f1ff9
+0x81760938   1524      0x354   0x1f0003 Event            
+0xe1b51110   1524      0x358    0xf001f Section          CTF.TimListCache.FMPDefaultS-1-5-21-343818398-789336058-1343024091-1004SFM.DefaultS-1-5-21-343818398-789336058-1343024091-1004
+0x81746020   1524      0x35c   0x1f03ff Thread           TID 1848 PID 1524
+0xe1b4bb50   1524      0x360   0x1f0001 Port             
+0x81747290   1524      0x364   0x1f0003 Event            
+0xe1a94258   1524      0x368   0x1f0001 Port             
+0xe1a00c38   1524      0x36c   0x1f0001 Port             
+0xe1a009c0   1524      0x370        0xc Token            
+0x817471e0   1524      0x374   0x1f0003 Event            
+0x817caf70   1524      0x378   0x1f0003 Event            ShellReadyEvent
+0x81ad00c0   1524      0x37c  0x21f0003 Event            
+0xe1986060   1524      0x380    0x20019 Key              USER
+0x8178a1f0   1524      0x384   0x100020 File             \Device\HarddiskVolume1\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.2180_x-ww_a84f1ff9
+0xe19d6398   1524      0x388    0x20019 Key              USER
+0xe19afcd8   1524      0x38c    0x20019 Key              USER
+0xe1aee218   1524      0x390        0x4 Section          mmGlobalPnpInfo
+0x817463f0   1524      0x394   0x1f0003 Event            
+0x817828c8   1524      0x398   0x1f0003 Semaphore        PowerProfileRegistrySemaphore
+0xe1a04020   1524      0x39c    0x20019 Key              USER
+0x81bd1ce0   1524      0x3a0   0x1f0003 Event            
+0x817bff90   1524      0x3a4   0x100020 File             \Device\HarddiskVolume1\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.2180_x-ww_a84f1ff9
+0x81746510   1524      0x3a8   0x100020 File             \Device\HarddiskVolume1\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.2180_x-ww_a84f1ff9
+0x81745620   1524      0x3ac   0x1f03ff Thread           TID 1892 PID 1524
+0x81ad00f0   1524      0x3b4   0x1f0001 Mutant           
+0x81745d48   1524      0x3b8   0x1f0003 Event            
+0x81746430   1524      0x3c0   0x1f0003 Event            HPlugEjectEvent
+0x81745e28   1524      0x3c4   0x1f0003 Event            
+0x81745df8   1524      0x3c8   0x1f0003 Event            
+0x81745db8   1524      0x3cc   0x1f0001 Mutant           
+0xe16da840   1524      0x3d0   0x1f0001 Port             
+0x81a920d8   1524      0x3d4   0x100002 Event            mixercallback
+0xe19af2b8   1524      0x3d8        0x6 Section          WDMAUD_Callbacks
+0x817c0338   1524      0x3dc   0x12019f File             \Device\KSENUM#00000001\{9B365890-165F-11D0-A195-0020AFD156E4}
+0x81a92330   1524      0x3e0   0x100002 Event            hardwaremixercallback
+0x81741020   1524      0x3e4   0x1f03ff Thread           TID 1896 PID 1524
+0x81745cd8   1524      0x3e8   0x1f0001 Mutant           
+0x81745488   1524      0x3ec   0x1f0001 Mutant           
+0x81a10de8   1524      0x3f0   0x1f0001 Mutant           MidiMapper_modLongMessage_RefCnt
+0x817b4418   1524      0x3f4   0x1f0001 Mutant           MidiMapper_Configure
+0x817453c0   1524      0x3f8   0x1f0001 Mutant           
+0xe1b5a410   1524      0x404    0x20019 Key              USER
+0xe1b60590   1524      0x408    0xf003f Key              MACHINE\MICROSOFT\WINDOWS\SHELL
+0xe1b605f8   1524      0x40c    0x20019 Key              USER
+0x817451d0   1524      0x410   0x12019f File             \Device\WMIDataDevice
+0x817b1248   1524      0x414   0x1f0003 Event            
+0x817462f8   1524      0x418   0x100004 WmiGuid          
+0xe1d524f8   1524      0x41c    0xf0007 Section          MSCTF.MarshalInterface.FileMap.MDG.NB.MKBCB
+0x81741ea8   1524      0x420   0x1f0003 Event            
+0x81741df8   1524      0x424   0x100003 Event            
+0xe1a040b8   1524      0x428    0x20019 Key              USER
+0x81a2b7a8   1524      0x42c   0x100001 File             \Device\HarddiskVolume1\Documents and Settings\CSCG\PrintHood
+0x817455f0   1524      0x430   0x1f0003 Event            
+0x817450d8   1524      0x434   0x1f0001 Mutant           MSCTF.Shared.MUTEX.MDG
+0xe19b2040   1524      0x438    0xf0007 Section          MSCTF.Shared.SFM.MDG
+0xe1c9db80   1524      0x43c   0x1f0001 Port             
+0xe1c96cf8   1524      0x440    0x20019 Key              MACHINE\MICROSOFT\TRACING\NETSHELL
+0x8171ee68   1524      0x444   0x1f0003 Event            
+0xe1b45558   1524      0x448    0x20019 Key              USER
+0x817450d8   1524      0x44c   0x1f0001 Mutant           MSCTF.Shared.MUTEX.MDG
+0xe19b2040   1524      0x450    0xf001f Section          MSCTF.Shared.SFM.MDG
+0x81a2fde8   1524      0x454   0x100020 File             \Device\HarddiskVolume1\WINDOWS\WinSxS\x86_Microsoft.Windows.GdiPlus_6595b64144ccf1df_1.0.2600.2180_x-ww_522f9f82
+0x8171ed48   1524      0x458   0x1f0003 Event            
+0x817825b0   1524      0x45c   0x100000 Mutant           _!MSFTHISTORY!_
+0x8171edd8   1524      0x460   0x1f0003 Event            
+0xe1b6b3e8   1524      0x464    0x20019 Key              USER
+0x817571b8   1524      0x468   0x100003 Semaphore        
+0x8171e0b0   1524      0x470   0x100003 Semaphore        
+0xe1cdcc70   1524      0x474    0xf0007 Section          MSCTF.MarshalInterface.FileMap.MDG.KB.MKDI
+0x817cd090   1524      0x478   0x1f0003 Semaphore        
+0x81741940   1524      0x47c   0x1f0003 Event            
+0x817230e0   1524      0x480   0x12019f File             \Device\HarddiskVolume1\Documents and Settings\CSCG\Local Settings\History\History.IE5\index.dat
+0xe1b6a248   1524      0x488    0x20019 Key              USER
+0x81759160   1524      0x48c   0x100003 Semaphore        
+0x81723f80   1524      0x490   0x100000 Mutant           c:!documents and settings!cscg!local settings!history!history.ie5!
+0x81ae2e98   1524      0x494   0x12019f File             \Device\HarddiskVolume1\Documents and Settings\CSCG\Cookies\index.dat
+0x81723a90   1524      0x498   0x100000 Mutant           c:!documents and settings!cscg!cookies!
+0xe1beaca0   1524      0x49c        0x2 Section          C:_Documents and Settings_CSCG_Local Settings_Temporary Internet Files_Content.IE5_index.dat_49152
+0x819cbfe8   1524      0x4a0   0x1f0003 Semaphore        
+0xe1c9d900   1524      0x4a4    0x20019 Key              MACHINE\CONTROLSET001\CONTROL\NETWORKPROVIDER\HWORDER
+0x81ae0640   1524      0x4b4   0x1f0003 Event            
+0x81753ba0   1524      0x4b8   0x1f0003 Semaphore        
+0xe1b41dc0   1524      0x4bc    0x20019 Key              USER
+0x81a3afa0   1524      0x4c4   0x1f0001 Mutant           
+0x81756fc0   1524      0x4c8  0x21f0003 Event            
+0x81752770   1524      0x4d0   0x12019f File             \Device\HarddiskVolume1\Documents and Settings\CSCG\Local Settings\Temporary Internet Files\Content.IE5\index.dat
+0xe1a8f920   1524      0x4d4    0x20019 Key              USER
+0x817064e0   1524      0x4dc  0x21f0003 Event            
+0xe1aeda48   1524      0x4e4    0x20019 Key              USER
+0xe1c9a0b8   1524      0x4e8    0x20019 Key              USER
+0xe1bf7a60   1524      0x4f0        0x2 Section          C:_Documents and Settings_CSCG_Local Settings_History_History.IE5_index.dat_32768
+0xe1b6b450   1524      0x4f4    0x20019 Key              USER\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\INTERNET SETTINGS\ZONEMAP
+0xe1bf9d28   1524      0x4f8    0x20019 Key              USER\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\INTERNET SETTINGS\ZONEMAP
+0x81781cf8   1524      0x4fc   0x100000 Mutant           WininetStartupMutex
+0xe1bf7c48   1524      0x500        0x2 Section          C:_Documents and Settings_CSCG_Cookies_index.dat_32768
+0x8171a4d8   1524      0x504   0x100000 File             \Device\Dfs
+0xe1d0e8f8   1524      0x510    0xf0007 Section          MSCTF.MarshalInterface.FileMap.MDG.JB.MKDI
+0x81753fb8   1524      0x514   0x1f0003 Semaphore        
+0x816dd5d0   1524      0x51c  0x21f0003 Event            
+0x8171c310   1524      0x520   0x1f0003 Event            
+0x8171c348   1524      0x524   0x12019f File             \Device\VBoxGuest
+0x81757ef0   1524      0x528   0x1f0003 Event            
+0x81757f20   1524      0x52c   0x1f0003 Event            
+0x81757f50   1524      0x530   0x1f0003 Event            
+0x81764378   1524      0x534   0x1f0003 Event            
+0x817643a8   1524      0x538   0x1f0003 Event            
+0xe1bae448   1524      0x53c    0x20019 Key              MACHINE\CONTROLSET001\CONTROL\NLS\LANGUAGE GROUPS
+0xe1b8e228   1524      0x540    0x20019 Key              MACHINE\CONTROLSET001\CONTROL\NLS\LOCALE\ALTERNATE SORTS
+0xe1986508   1524      0x544    0x20019 Key              MACHINE\CONTROLSET001\CONTROL\NLS\LOCALE
+0x817643d8   1524      0x548   0x100003 Event            
+0x81733c78   1524      0x54c   0x100003 Semaphore        
+0x81a50550   1524      0x550   0x1f0003 Semaphore        
+0x81755bc8   1524      0x554   0x100003 Semaphore        
+0x81751330   1524      0x558   0x100000 Mutant           WininetProxyRegistryMutex
+0x81790fa0   1524      0x55c   0x1f0001 Mutant           
+0x81723b28   1524      0x560   0x100000 Mutant           WininetConnectionMutex
+0x81ac8780   1524      0x564   0x1f0003 Event            
+0xe1ca8f68   1524      0x574   0x1f0001 Port             
+0x817571f0   1524      0x57c   0x100003 Semaphore        
+0xe1c9c950   1524      0x580        0xc Token            
+0x817cae88   1524      0x590   0x1f0003 Semaphore        shell.{6D5313C0-8C62-11D1-B2CD-006097DF8C11}
+0x81bd1f38   1524      0x59c   0x100000 Mutant           c:!documents and settings!cscg!local settings!temporary internet files!content.ie5!
+0x8185c278   1524      0x5a0   0x100003 Event            
+0x817608d8   1524      0x5a4   0x1f0003 Event            
+0xe19505c8   1524      0x5a8    0x20006 Key              USER\SOFTWARE\MICROSOFT\WINDOWS\SHELLNOROAM\BAGS\27\SHELL
+0xe1baf558   1524      0x5b4    0x20019 Key              USER
+0xe1b664f8   1524      0x5b8    0x20019 Key              USER
+0x81760660   1524      0x5bc   0x1f03ff Thread           TID 576 PID 1524
+0x817b10d8   1524      0x5c8   0x1f0003 Event            
+0x817c9950   1524      0x618   0x12019f File             \Device\HarddiskVolume1\Documents and Settings\CSCG\Local Settings\History\History.IE5\MSHist012020032220200323\index.dat
+0xe1b120b0   1524      0x62c    0x20019 Key              USER
+0x81af6d60   1524      0x634   0x1f0001 Mutant           c:!documents and settings!cscg!local settings!history!history.ie5!mshist012020032220200323!
+0x81a06300   1524      0x638   0x1f0003 Event            
+0xe1612820   1524      0x63c    0x20019 Key              USER
+0x81ac1308   1524      0x640   0x12019f File             \Device\NamedPipe\samr
+0xe1a8fca0   1524      0x644    0x20019 Key              USER
+0x81ae68e8   1524      0x648   0x1f0001 Mutant           _!SHMSFTHISTORY!_
+0xe14cfaf0   1524      0x650    0x20019 Key              USER
+0xe17bfa50   1524      0x668    0x20019 Key              USER
+0x81adc310   1524      0x674   0x1f0003 Event            
+0xe1618f68   1524      0x67c    0xf0007 Section          MSCTF.MarshalInterface.FileMap.MDG.AC.GGNMC
+0xe1437e50   1524      0x698    0x20019 Key              USER
+0x8195ac50   1524      0x6b0   0x1f0001 Mutant           
+0x817a57d8   1524      0x6b4   0x100020 File             \Device\HarddiskVolume1\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.2180_x-ww_a84f1ff9
+0x8197ed70   1524      0x6b8   0x1f0003 Event            
+0x817b1918   1524      0x6bc  0x21f0003 Event            
+0xe1d5a468   1524      0x6c0    0xf0007 Section          MSCTF.MarshalInterface.FileMap.MDG.IB.MKDI
+0xe1701ab0   1524      0x6d4    0x20019 Key              USER
+0xe1943ac8   1524      0x6d8    0xf0007 Section          MSCTF.MarshalInterface.FileMap.MDG.PB.GGNMC
+0xe175fed8   1524      0x71c    0xf0007 Section          C:_Documents and Settings_CSCG_Local Settings_History_History.IE5_MSHist012020032220200323_index.dat_32768
+0xe1c9b7c0   1524      0x720    0x20019 Key              USER

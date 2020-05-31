@@ -1,0 +1,108 @@
+**************************************************
+Process: 1524 explorer.exe
+Cache type "DEST" at 0xdfc77
+Last modified: 2020-03-22 10:30:38 UTC+0000
+Last accessed: 2020-03-22 18:30:40 UTC+0000
+URL: CSCG@file:///E:/password.txt
+**************************************************
+Process: 1524 explorer.exe
+Cache type "DEST" at 0x15057f
+Last modified: 2020-03-22 10:30:38 UTC+0000
+Last accessed: 2020-03-22 18:30:40 UTC+0000
+URL: CSCG@file:///E:/password.txt
+**************************************************
+Process: 1524 explorer.exe
+Cache type "URL " at 0x1506080
+Record length: 0x100
+Location: Visited: CSCG@file:///C:/Documents%20and%20Settings/CSCG/Desktop/CSCG/cscg.flag.PNG
+Last modified: 2020-03-14 18:23:10 UTC+0000
+Last accessed: 2020-03-14 18:23:10 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xbc
+**************************************************
+Process: 1524 explorer.exe
+Cache type "URL " at 0x1506180
+Record length: 0x100
+Location: Visited: CSCG@file:///C:/Documents%20and%20Settings/CSCG/Desktop/CSCG/cscg.flag.bmp
+Last modified: 2020-03-14 18:22:55 UTC+0000
+Last accessed: 2020-03-14 18:22:55 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xbc
+**************************************************
+Process: 1524 explorer.exe
+Cache type "URL " at 0x1506280
+Record length: 0x100
+Location: Visited: CSCG@file://Nas/Coding/New%20Text%20Document.txt
+Last modified: 2020-03-22 17:05:05 UTC+0000
+Last accessed: 2020-03-22 17:05:05 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xa4
+**************************************************
+Process: 1524 explorer.exe
+Cache type "URL " at 0x1506380
+Record length: 0x100
+Location: Visited: CSCG@file:///E:/flag.zip
+Last modified: 2020-03-22 18:27:01 UTC+0000
+Last accessed: 2020-03-22 18:27:01 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x8c
+**************************************************
+Process: 1524 explorer.exe
+Cache type "URL " at 0x1506480
+Record length: 0x100
+Location: Visited: CSCG@file:///E:/flag.txt
+Last modified: 2020-03-22 18:25:56 UTC+0000
+Last accessed: 2020-03-22 18:25:56 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x8c
+**************************************************
+Process: 1524 explorer.exe
+Cache type "URL " at 0x1506680
+Record length: 0x100
+Location: Visited: CSCG@file:///E:/password.txt
+Last modified: 2020-03-22 18:30:38 UTC+0000
+Last accessed: 2020-03-22 18:30:38 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x90
+**************************************************
+Process: 1524 explorer.exe
+Cache type "URL " at 0x1985000
+Record length: 0x100
+Location: :2020032220200323: CSCG@file://Nas/Coding/New%20Text%20Document.txt
+Last modified: 2020-03-22 09:05:05 UTC+0000
+Last accessed: 2020-03-22 17:05:05 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 1524 explorer.exe
+Cache type "URL " at 0x1985100
+Record length: 0x100
+Location: :2020032220200323: CSCG@:Host: Nas
+Last modified: 2020-03-22 08:46:30 UTC+0000
+Last accessed: 2020-03-22 16:46:30 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 1524 explorer.exe
+Cache type "URL " at 0x1985200
+Record length: 0x100
+Location: :2020032220200323: CSCG@file:///E:/flag.zip
+Last modified: 2020-03-22 10:27:01 UTC+0000
+Last accessed: 2020-03-22 18:27:01 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 1524 explorer.exe
+Cache type "URL " at 0x1985300
+Record length: 0x100
+Location: :2020032220200323: CSCG@:Host: My Computer
+Last modified: 2020-03-22 09:15:17 UTC+0000
+Last accessed: 2020-03-22 17:15:17 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 1524 explorer.exe
+Cache type "URL " at 0x1985400
+Record length: 0x100
+Location: :2020032220200323: CSCG@file:///E:/flag.txt
+Last modified: 2020-03-22 10:25:56 UTC+0000
+Last accessed: 2020-03-22 18:25:56 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 1524 explorer.exe
+Cache type "URL " at 0x1985600
+Record length: 0x100
+Location: :2020032220200323: CSCG@file:///E:/password.txt
+Last modified: 2020-03-22 10:30:38 UTC+0000
+Last accessed: 2020-03-22 18:30:38 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0

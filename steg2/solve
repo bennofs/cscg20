@@ -1,0 +1,2 @@
+In [5]: "".join([chr(int(x.strip(), 2)) for x in x])
+Out[5]: 'CSCG{a_Fl4g}'

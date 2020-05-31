@@ -1,0 +1,20 @@
+#+TITLE: notes
+
+- Error while requesting Payment API: Invalid URL: http@@@://///wallets/-1/balance
+
+  http://payment-api:9090/help?
+- Error from Payment API: {"endpoints":[{"method":"GET","path":"/wallets/:id/balance","description":"check wallet balance"},{"method":"GET","path":"/wallets","description":"list all wallets"},{"method":"GET","path":"/help","description":"this help message"}]}
+  o
+  http://payment-api:9090/accounts?
+- [{"account":"1337-420-69-93dcbbcd","balance":133500}]
+
+
+* hosts
+
+172.23.0.2: web app (express) (:8080)
+172.23.0.3: payment api (:9090)
+172.23.0.4: nginx (:80)
+
+172.23.0.2 8080 Error while requesting Payment API: Unexpected token < in JSON at position 0
+172.23.0.3 9090 Error from Payment API: "Cannot GET /\n\nTry GETting /help for possible endpoints."
+172.23.0.4 80 Error while requesting Payment API: Unexpected token < in JSON at position 0

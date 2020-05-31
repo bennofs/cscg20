@@ -1,0 +1,34 @@
+# Sample Configurations
+
+# Send 100 requests to each target
+count = 100
+# Enable verbose logging
+verbose = true
+# Use an http proxy for all connections
+#proxy = "http://127.0.0.1:8080"
+
+# # Specify the first request
+# [[requests]]
+#     # Use the GET request method
+#     method = "POST"
+#     # Set the URL target. Any valid URL is accepted, including ports, https, and parameters.
+#     url = "http://staywoke.hax1.allesctf.net/products/1"
+#     # Set the request body.
+#     # body = "body=text"
+#     # Set the cookie values to send with the request to this target. Must be an array.
+#     cookies = ["session=s%3ARsk51iWKyAJMdH0_8PDvGdXUXMHsy73G.5DRxTb6wtgW3g8yL5r7duh6CWvsK5aE7klln2HNSQhE"]
+#     # Follow redirects
+#     redirects = true
+
+# Specify the first request
+[[requests]]
+    # Use the GET request method
+    method = "POST"
+    # Set the URL target. Any valid URL is accepted, including ports, https, and parameters.
+    url = "http://staywoke.hax1.allesctf.net/cart"
+    # Set the request body.
+    body = "index=0"
+    # Set the cookie values to send with the request to this target. Must be an array.
+    cookies = ["session=s%3ARsk51iWKyAJMdH0_8PDvGdXUXMHsy73G.5DRxTb6wtgW3g8yL5r7duh6CWvsK5aE7klln2HNSQhE"]
+    # Follow redirects
+    redirects = true

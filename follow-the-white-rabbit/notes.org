@@ -1,0 +1,5 @@
+#+TITLE: notes
+
+* flag1: CSCG{data_mining_teleport_or_gravity_patch?}
+extract assets with utinyripper, then find png
+* flag2: CSCG{03ASY_teleport_and_datamining_scenes}

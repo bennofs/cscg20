@@ -1,0 +1,12 @@
+version: "3.1"
+services:
+  saas2:
+    container_name: saas2
+    build: .
+    ports:
+      - '9888:1024'
+    stdin_open: true
+    tty: true
+    restart: always
+    entrypoint: ./ynetd
+    command: ./sq

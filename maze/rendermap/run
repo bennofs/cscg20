@@ -1,0 +1,13 @@
+usage: rendermap [OPTIONS] MAPFILE
+  -pass string
+    	password for login (default "jasd98213")
+  -remote string
+    	server to connect to. leave empty to start offline
+  -trace
+    	trace, not just show, player positions
+  -user string
+    	username to authenticate as (default "observer")
+  -x int
+    	initial x position of camera (default 2400)
+  -y int
+    	initial y position of camera (default 2400)

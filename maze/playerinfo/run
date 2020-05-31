@@ -1,0 +1,8 @@
+flag provided but not defined: -uid
+Usage of ../bin/playerinfo:
+  -pass string
+    	password for login (default "jae8aH5u")
+  -remote string
+    	server to connect to (default "147.75.85.99:1341")
+  -user string
+    	username to authenticate as (default "bennofs")

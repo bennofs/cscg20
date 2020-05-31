@@ -1,0 +1,3 @@
+/code/cscg20/reme2/obj/Debug/netcoreapp2.1/reme2.csprojAssemblyReference.cache
+/code/cscg20/reme2/obj/Debug/netcoreapp2.1/reme2.AssemblyInfoInputs.cache
+/code/cscg20/reme2/obj/Debug/netcoreapp2.1/reme2.AssemblyInfo.cs

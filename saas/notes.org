@@ -1,0 +1,3 @@
+#+TITLE: notes
+
+flag: CSCG{t3chnic4lly_an_0d4y_but_...}

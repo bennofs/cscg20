@@ -1,0 +1,270 @@
+#!/usr/bin/env python3
+import gdb
+import angr
+import claripy
+import pickle
+from angrgdb import *
+
+INTERPRETER_LOOP = 0x555555554bf4
+WRITE_CALL = 0x555555554f31
+READ_CALL = 0x555555554eab
+POW_FUNC = 0x555555554a89
+WRITE_FUNC = 0x5555555547b0
+PROGRAM_ADDR = 0x555555756040
+
+class PowHook(angr.SimProcedure):
+    def run(self, a, b):
+        assert a.concrete, "first pow arg must be concrete"
+        assert b.concrete, "second pow arg must be concrete"
+
+        a = self.state.solver.eval(a)
+        b = self.state.solver.eval(b)
+
+        # call the function
+        r = gdb.parse_and_eval(f'((int(*)(long,long)){POW_FUNC})({a}, {b})')
+        self.state.mem[b].uint32_t = struct.unpack("I", gdb.inferiors()[0].read_memory(b, 4))[0]
+        return int(r)
+
+class WriteHook(angr.SimProcedure):
+    def run(self, a, addr, l):
+        assert a.concrete, "first write arg must be concrete"
+        assert addr.concrete, "second write arg must be concrete"
+        assert l.concrete, "third write arg must be concrete"
+
+        fd = self.state.solver.eval(a)
+        data = self.state.solver.eval(self.state.memory.load(addr, l), cast_to=bytes)
+        print(f"write {fd}: {data}")
+        return l
+
+def gdb_setup():
+    gdb.execute("delete")
+    gdb.execute("tbreak *0x0000555555554eab")
+    gdb.execute("r code.bin < fakeinput")
+
+def setup():
+    global bufaddr, size, INIT_STATE
+    gdb_setup()
+    bufaddr = int(gdb.selected_frame().read_register("rsi"))
+    size = int(gdb.selected_frame().read_register("rdx"))
+    gdb.execute("ni")
+    INIT_STATE = StateManager().state
+    INIT_STATE.project.hook(POW_FUNC, PowHook())
+    INIT_STATE.project.hook(WRITE_FUNC, WriteHook())
+
+def gen_trace(state):
+    sm = state.project.factory.simulation_manager(state)
+    sm.explore(find=[WRITE_CALL])
+    t = sm.one_found.history.bbl_addrs.hardcopy
+    with open("trace.pickle", "wb") as f:
+        pickle.dump(t, f)
+    return t, sm
+
+def load_trace():
+    with open("trace.pickle", "rb") as f:
+        return pickle.load(f)
+
+def follow(state, trace):
+    sm = state.project.factory.simulation_manager(state)
+    sm.use_technique(Follower(trace, state.project.loader.main_object.contains_addr))
+    sm.explore(find=[WRITE_CALL])
+    return sm
+
+def get_ip(state):
+    return state.mem[PROGRAM_ADDR].long.concrete
+
+def angr_nextb(state):
+    states = [state.copy()]
+    while len(states) < 2:
+        if states[0].addr == WRITE_FUNC:
+            addr = states[0].regs.rsi
+            l = states[0].solver.eval(states[0].regs.rdx, cast_to=int)
+            data = states[0].solver.eval(states[0].memory.load(addr, l), cast_to=bytes)
+            return data
+        states = states[0].step().successors
+    if len(states) != 2:
+        return b"branch too many"
+    states = list(sorted(states, key=lambda x: x.addr))
+    jump, normal = states
+    if jump.addr & 0xfff != 0xd39 or normal.addr & 0xfff != 0x15f:
+        return f"unexpected branch {repr(states)}".encode()
+
+    succ = jump.step().successors
+    if len(succ) != 1:
+        print(jump)
+        print(succ)
+        print("expected one successors")
+        return
+
+    return normal, succ[0]
+
+def build_cfg(start):
+    frame = start.solver.eval(start.regs.rbp, cast_to=int)
+    todo = [start]
+    graph = {}
+    while todo:
+        print(f"queue: {len(todo)}")
+        s = todo.pop()
+        source = get_ip(s)
+        if source in graph:
+            continue
+        targets = angr_nextb(s)
+        graph[source] = targets
+        if not isinstance(targets, tuple):
+            continue
+
+        todo = list(targets) + todo
+    return graph
+
+def step_to_loop(s):
+    succ = [s]
+    while succ[0].addr != 0x555555554bf0:
+        succ = succ[0].step(extra_stop_points=[0x555555554bf0]).successors
+        if len(succ) != 1:
+            print(s)
+            print(succ)
+            raise RuntimeError("cannot step to loop, branch")
+    return succ[0]
+
+def angr_until(s, ip):
+    states = [s]
+    while get_ip(states[0]) != ip:
+        states = states[0].step(extra_stop_points=[0x555555554bf0]).successors
+        if len(states) != 1:
+            print(states[0])
+            print(states)
+            raise RuntimeError("branch during until")
+    return step_to_loop(states[0])
+
+
+FAIL = None
+def angr_merge(a, b):
+    global FAIL
+    cond = a.history.jump_guards[-1]
+    while get_ip(a) != get_ip(b):
+        print(get_ip(a), get_ip(b))
+        if get_ip(a) < get_ip(b):
+            a = angr_until(a, get_ip(b))
+        else:
+            b = angr_until(b, get_ip(a))
+    print(a,b, get_ip(a) , get_ip(b))
+    a.solver.simplify()
+    b.solver.simplify()
+    if not a.solver.eval(cond) or b.solver.eval(cond):
+        print("unexpected symbolic branch")
+        print(cond)
+        FAIL = (a,b)
+        return
+    m = a.merge(b, merge_conditions=[
+        [cond],
+        [claripy.Not(cond)],
+    ])[0]
+    m.solver.simplify()
+    return m
+
+STATES = []
+def do_steps(s):
+    while True:
+        STATES.append(s)
+        print(len(STATES), len(s.solver.constraints))
+        n = angr_nextb(s)
+        if not isinstance(n, tuple):
+            print(n)
+            break
+        s = angr_merge(*n)
+
+def cfg_dot(g):
+    with open("graph.dot", "w") as f:
+        f.write("digraph control_flow {\n")
+        for source, targets in g.items():
+            if not isinstance(targets, list) and not isinstance(targets, tuple):
+                f.write(f'{source} -> "{repr(targets)}";\n')
+            else:
+                for target in targets:
+                    f.write(f"{source} -> {get_ip(target)};\n")
+        f.write("}")
+
+
+def gdb_ip():
+    return int(gdb.parse_and_eval("*(int*)0x555555756040"))
+
+def gdb_boff():
+    return int(gdb.parse_and_eval("*(int*)($rbp-0x24)"))
+
+def gdb_until(ip):
+    gdb.execute(f"tbreak *0x555555554c0b if *(int*)0x555555756040 == {ip}\ncontinue")
+
+def gdb_exited():
+    inf = gdb.inferiors()
+    return not inf or not inf[0].pid
+
+def gdb_dojump(jump):
+    gdb.execute('''tbreak *0x555555554d33\ncontinue''')
+    gdb.execute(f'''set $rip={"0x555555554d39" if jump else "0x55555555515f"}''')
+
+def gdb_follow(branches):
+    branches = list(branches)
+    while branches:
+        ip, choice = branches.pop(0)
+        gdb_until(ip)
+        gdb_dojump(choice)
+
+def gdb_nextb():
+    gdb.execute("tbreak *0x555555554d33\ncontinue")
+
+def gdb_cfg():
+    gdb_setup()
+    start = gdb_ip()
+    todo = [(start, [])]
+
+    explored = set()
+    with open("gdb.dot", "w") as f:
+        f.write("digraph control_flow {\n")
+        while todo:
+            source, branches = todo.pop()
+            if source in explored:
+                continue
+            explored.add(source)
+            gdb_setup()
+            gdb_follow(branches)
+            gdb.execute(f"tbreak *{WRITE_FUNC}")
+            gdb_nextb()
+
+            if gdb_exited():
+                f.write(f"{source} -> exit;\n")
+                continue
+
+            print(hex(int(gdb.selected_frame().read_register("rip"))))
+            if int(gdb.selected_frame().read_register("rip")) == WRITE_FUNC:
+                addr = int(gdb.selected_frame().read_register("rsi"))
+                len = int(gdb.selected_frame().read_register("rdx"))
+                data = gdb.selected_inferior().read_memory(addr, len)
+                print("WRITE", data)
+                f.write(f'''{source} -> "{repr(bytes(data))};"''')
+                continue
+
+
+            normal = gdb_ip()
+            jump = normal + gdb_boff()
+
+            todo.append((normal, branches + [(source, False)]))
+            todo.append((jump, branches + [(source, True)]))
+
+            f.write(f"{source} -> {normal};\n")
+            f.write(f"{source} -> {jump};\n")
+        f.write("}")
+
+def sim_state(state):
+    global bufaddr, size
+    prefix = b"n3w_ag3_v1rtu4liz4t1on_"
+    c = state.copy()
+    s = claripy.BVS("input", 8 * 4)
+    c.memory.store(bufaddr, claripy.BVV(prefix))
+    c.memory.store(bufaddr + len(prefix), s)
+    return s, c
+
+
+INPUT = None
+def fill_states():
+    global INPUT
+    INPUT, s = sim_state(INIT_STATE)
+    do_steps(s)

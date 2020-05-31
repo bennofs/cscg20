@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+        "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="en">
+
+<!--
+Comment *out* the CSS link and Download section when making
+distribution document.
+*Don't* forget to remove the comments when making a Web page.
+
+Also remember to update the date in the footer.
+-->
+
+<head>
+    <title>Wavdumper</title>
+<!--    <link href="../global.css" rel="stylesheet" type="text/css">-->
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta name="author" content="Kristian Ovaska">
+</head>
+
+<body>
+
+<h1>Wavdumper</h1>
+
+<p>
+
+Author: <a href="http://www.cs.helsinki.fi/u/hkovaska/">Kristian Ovaska</a>
+        (kristian.ovaska@helsinki.fi) <br>
+WWW: <a href="http://www.cs.helsinki.fi/u/hkovaska/wavdumper/">
+     http://www.cs.helsinki.fi/u/hkovaska/wavdumper/</a> <br>
+License: GNU General Public License <br>
+Version: 0.5 (2003-11-13) <br>
+
+<p>
+Wavdumper prints detailed information on the headers and structure
+of a WAV file.
+It is written in <a href="http://www.python.org/">Python</a> and
+has been tested on Python 2.2 and 2.3.
+
+<p>
+Recognized chunk types:
+cue, data, disp, fact, fmt, junk, labl, ltxt, list, note, pad, plst, smpl
+
+<p>
+Wavdumper does not read actual sound data; it is for inspecting
+headers only.
+For programmers, try the <code>wave</code> module in the standard Python library instead.
+
+<!--
+<h2>Download</h2>
+
+<p>
+Wavdumper 0.5: <a href="wavdumper-0.5.zip">wavdumper-0.5.zip</a>
+-->
+
+<h2>Usage</h2>
+
+<p>
+From command line: <br>
+<code>
+&gt; wavdumper.py file1.wav ... fileN.wav <br>
+</code>
+or <br>
+<code>
+&gt; wavdumper.py *.wav <br>
+</code>
+
+<p>
+As a Python module: <br>
+<code>
+&gt;&gt;&gt; import wavdumper <br>
+&gt;&gt;&gt; wav = wavdumper.Wav('filename.wav') <br>
+&gt;&gt;&gt; wav.printInfo() <br>
+</code>
+or <br>
+<code>
+&gt;&gt;&gt; wav.printInfo(outfile) # file-like object <br>
+</code>
+
+<h2>Notes</h2>
+
+<ul>
+    <li>Recognizes big-endian WAV files (with RIFF tag 'RIFX'), but I've never
+        seen one and couldn't test it.
+    <li>There are some checks for WAV file validity (for example, that there
+        is no more than one data chunk), but they aren't complete in the sense
+        that they would catch all invalid files.
+    <li>Performance with large files is no problem, since Wavdumper skips through
+        sound data.
+</ul>
+
+<h2>Todo</h2>
+
+<ul>
+    <li>Add support for more chunks: inst, ...
+    <li>Verbose option: print every value in the headers.
+    <li>Print durations more nicely: for example, use minutes instead of
+        seconds for long files.
+    <li>Some values (like SMPTE stuff) are not printed, they probably should.
+    <li>Some text fields in WAV files may contain line breaks, which breaks
+	    indentation of Wavdumper output. This looks a bit ugly.
+    <li>Make more complete test cases.
+</ul>
+
+<h2>Example output</h2>
+
+<p>
+<pre>
+> wavdumper.py test1.wav
+
+File: test1.wav (1910 bytes)
+Chunk at pos 20: id = "fmt ", length = 16 bytes
+  Format Chunk
+  Data format: Uncompressed PCM
+  Channels: 1
+  Sample rate: 8800 Hz
+  Average bytes per sec: 17600
+  Block align (bytes): 2
+  Bits per sample: 16
+Chunk at pos 44: id = "data", length = 1760 bytes
+  1760 bytes sample data
+  880 samples
+  0.100 seconds
+Chunk at pos 1812: id = "smpl", length = 60 bytes
+  Sampler Chunk
+  Manufacturer: 0
+  Product: 0
+  MIDI note (60=middle-C): 69 (A-5) +- 0.0%
+  Sample loop
+    Loop ID: 0
+    Type: forward
+    Range: 0 - 879
+    Repeat: infinity
+Chunk at pos 1880: id = "LIST", length = 30 bytes
+  List Chunk, id = "INFO"
+  Chunk at pos 1892: id = "INAM", length = 17 bytes
+    Name: 440 Hz sine wave
+</pre>
+
+<h2>References</h2>
+
+<p>
+Contain overlapping information.
+
+<ul>
+    <li><a href="http://www.sonicspot.com/guide/wavefiles.html">
+                 http://www.sonicspot.com/guide/wavefiles.html</a>
+    <li><a href="http://www.tsp.ece.mcgill.ca/MMSP/Documents/AudioFormats/WAVE/WAVE.html">
+                 http://www.tsp.ece.mcgill.ca/MMSP/Documents/AudioFormats/WAVE/WAVE.html</a>
+    <li><a href="http://www.borg.com/~jglatt/tech/wave.htm">
+                 http://www.borg.com/~jglatt/tech/wave.htm</a>
+    <li><a href="http://ccrma-www.stanford.edu/CCRMA/Courses/422/projects/WaveFormat/">
+                 http://ccrma-www.stanford.edu/CCRMA/Courses/422/projects/WaveFormat/</a>
+    <li><a href="http://www.rfc-editor.org/rfc/rfc2361.txt">
+        RFC 2361</a> for a list of format codes (many are rare or obsolete)
+</ul>
+
+<!-- Footer -->
+<p>
+<hr>
+Page updated: 2003-11-13
+<br>
+Kristian Ovaska
+
+</body>
+</html>

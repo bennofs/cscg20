@@ -1,0 +1,5 @@
+#+TITLE: notes
+
+123123 ^ d == 13123123 MOD n
+
+N = x * (QUACK + 1)

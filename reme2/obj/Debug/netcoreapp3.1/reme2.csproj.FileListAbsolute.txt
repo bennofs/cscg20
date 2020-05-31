@@ -1,0 +1,17 @@
+/code/cscg20/reme2/obj/Debug/netcoreapp3.1/reme2.csprojAssemblyReference.cache
+/code/cscg20/reme2/obj/Debug/netcoreapp3.1/reme2.AssemblyInfoInputs.cache
+/code/cscg20/reme2/obj/Debug/netcoreapp3.1/reme2.AssemblyInfo.cs
+/code/cscg20/reme2/bin/Debug/netcoreapp3.1/reme2
+/code/cscg20/reme2/bin/Debug/netcoreapp3.1/reme2.deps.json
+/code/cscg20/reme2/bin/Debug/netcoreapp3.1/reme2.runtimeconfig.json
+/code/cscg20/reme2/bin/Debug/netcoreapp3.1/reme2.runtimeconfig.dev.json
+/code/cscg20/reme2/bin/Debug/netcoreapp3.1/reme2.dll
+/code/cscg20/reme2/bin/Debug/netcoreapp3.1/reme2.pdb
+/code/cscg20/reme2/bin/Debug/netcoreapp3.1/dnlib.dll
+/code/cscg20/reme2/obj/Debug/netcoreapp3.1/reme2.csproj.CopyComplete
+/code/cscg20/reme2/obj/Debug/netcoreapp3.1/reme2.dll
+/code/cscg20/reme2/obj/Debug/netcoreapp3.1/reme2.pdb
+/code/cscg20/reme2/obj/Debug/netcoreapp3.1/reme2.csproj.CoreCompileInputs.cache
+/code/cscg20/reme2/obj/Debug/netcoreapp3.1/reme2.genruntimeconfig.cache
+/code/cscg20/reme2/bin/Debug/netcoreapp3.1/dnlib.pdb
+/code/cscg20/reme2/bin/Debug/netcoreapp3.1/dnlib.xml
